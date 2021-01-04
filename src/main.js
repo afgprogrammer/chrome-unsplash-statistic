@@ -18,7 +18,12 @@ const instance = axios.create({
 });
 
 window.axios = instance
-
 app.use(VueAxios, axios)
-app.mount('#app')
 
+app.config.globalProperties.$filters = {
+    toHumanDate(date) {
+        return new Date(date).toLocaleDateString("en-US", {year: 'numeric', month: 'long', day: 'numeric'});
+    }
+}
+
+app.mount('#app')
