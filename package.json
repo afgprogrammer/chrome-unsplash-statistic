@@ -1,0 +1,14 @@
+{
+  "name": "unsplash-statistic",
+  "version": "1.0.0",
+  "description": "Your Unsplash statistics right on your browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/afgprogrammer",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
