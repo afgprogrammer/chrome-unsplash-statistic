@@ -3,11 +3,29 @@
   "version": "1.0.0",
   "description": "Your Unsplash statistics right on your browser.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afgprogrammer/chrome-unsplash-statistic"
+  },
   "scripts": {
+    "build-css": "node-sass assets/scss/app.scss -o assets/css/app.css",
+    "watch-css": "node-sass --watch assets/scss/app.scss -o assets/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "https://github.com/afgprogrammer",
-  "license": "ISC",
+  "author": {
+    "name": "Mohammad Rahmani",
+    "email": "rto1680@gmail.com",
+    "url": "https://github.com/afgprogrammer"
+  },
+  "license": "MIT",
+  "keywords": [
+    "unsplash",
+    "statistic",
+    "chrome",
+    "google",
+    "extension",
+    "afgprogrammer"
+  ],
   "dependencies": {
     "node-sass": "^5.0.0"
   }
