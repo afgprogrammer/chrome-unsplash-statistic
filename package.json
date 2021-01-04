@@ -10,7 +10,8 @@
   "scripts": {
     "build-css": "node-sass assets/scss/app.scss -o assets/css/app.css",
     "watch-css": "node-sass --watch assets/scss/app.scss -o assets/css/app.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "author": {
     "name": "Mohammad Rahmani",
@@ -27,6 +28,13 @@
     "afgprogrammer"
   ],
   "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
     "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0"
   }
 }
