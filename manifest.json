@@ -4,9 +4,6 @@
   "description": "Your Unsplash statistics right on your browser.",
   "manifest_version": 2,
   "browser_action": {},
-  "background": {
-    "scripts": ["dist/js/chunk-vendors.e24b91f8.js", "dist/js/app.ac4ee68f.js"]
-  },
   "chrome_url_overrides" : {
     "newtab": "dist/index.html"
   }
