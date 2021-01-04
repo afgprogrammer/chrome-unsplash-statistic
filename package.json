@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/afgprogrammer/chrome-unsplash-statistic"
   },
-  "scripts": {
+  "scripts": {   
     "build-css": "node-sass assets/scss/app.scss -o assets/css/app.css",
     "watch-css": "node-sass --watch assets/scss/app.scss -o assets/css/app.css",
     "serve": "vue-cli-service serve",
@@ -28,8 +28,10 @@
     "afgprogrammer"
   ],
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
+    "vue-axios": "^3.2.1",
     "node-sass": "^5.0.0"
   },
   "devDependencies": {
