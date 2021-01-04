@@ -1,0 +1,22 @@
+// Separators
+.height-10p {
+  @include separator(10px);
+}
+.height-20p {
+  @include separator(20px);
+}
+.height-30p {
+  @include separator(30px);
+}
+.height-50p {
+  @include separator(50px);
+}
+.height-100p {
+  @include separator(100px);
+}
+.height-150p {
+  @include separator(150px);
+}
+.height-200p {
+  @include separator(200px);
+}

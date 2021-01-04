@@ -1,0 +1,18 @@
+// General mixin
+@import "mixing/general";
+
+// Variables
+@import "variables";
+
+// Important utils style
+@import "colors";
+@import "separator";
+@import "typography";
+@import "overwrite";
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: 1.5;
+}

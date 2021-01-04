@@ -1,0 +1,60 @@
+/* Primary colors Map list */
+$yellow-color: (
+  'main': #ff9300,
+  '100': #fff5e7,
+  '200': #ffe1b9,
+  '300': #ffcd8b,
+  '400': #ffba5c,
+  '500': #ffa62e,
+  '600': #d17900,
+  '700': #a35e00,
+  '800': #744300,
+  '900': #462900,
+);
+
+$blue-color: (
+  'main': #4169E1,
+  '100': #B8C7F4,
+  '200': #90A8EE,
+  '300': #6988E7,
+  '400': #4169E1,
+  '500': #214ED3,
+  '600': #1B3FAB,
+  '700': #153084,
+  '800': #0e395d,
+  '900': #092238,
+);
+
+$gray-color: (
+  'main': #6F7581,
+  '50': #F0F4F8,
+  '100': #E9EAEC,
+  '200': #D0D2D7,
+  '300': #B8BBC1,
+  '400': #9FA3AC,
+  '500': #868C97,
+  '600': #6F7581,
+  '700': #5A5E68,
+  '800': #44464B,
+  '900': #2C2D31,
+);
+
+$white-color: #ffffff;
+
+$blue-darkest: map-get($map: $blue-color, $key: "900");
+$blue-dark: map-get($map: $blue-color, $key: "800");
+$blue-main: map-get($map: $blue-color, $key: "main");
+$blue-light: map-get($map: $blue-color, $key: "200");
+$blue-lightest: map-get($map: $blue-color, $key: "100");
+
+$gray-darkest: map-get($map: $gray-color, $key: "900");
+$gray-dark: map-get($map: $gray-color, $key: "800");
+$gray-main: map-get($map: $gray-color, $key: "main");
+$gray-light: map-get($map: $gray-color, $key: "200");
+$gray-lightest: map-get($map: $gray-color, $key: "100");
+
+$yellow-darkest: map-get($map: $yellow-color, $key: "900");
+$yellow-dark: map-get($map: $yellow-color, $key: "800");
+$yellow-main: map-get($map: $yellow-color, $key: "main");
+$yellow-light: map-get($map: $yellow-color, $key: "200");
+$yellow-lightest: map-get($map: $yellow-color, $key: "100");

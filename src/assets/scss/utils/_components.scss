@@ -1,0 +1,37 @@
+// Vue js page transition animation
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+// Positions
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-static {
+  position: static;
+}
+
+.rounded-10 {
+  border-radius: 10px
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.opacity-1 {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+@mixin separator($height) {
+  display: block;
+  height: $height;
+}
+
+@mixin transition($time, $type) {
+  -webkit-transition: all $time $type;
+  -moz-transition: all $time $type;
+  -o-transition: all $time $type;
+  -ms-transition: all $time $type;
+  transition: all $time $type;
+}
+
+@mixin shadow($horizontal, $vertical, $blur, $color) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  -o-box-shadow: $horizontal $vertical $blur $color;
+  -ms-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}

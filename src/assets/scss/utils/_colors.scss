@@ -1,0 +1,41 @@
+@each $key, $value in $blue-color {
+  .text-blue-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $yellow-color {
+  .text-yellow-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $gray-color {
+  .text-gray-#{$key} {
+    color: $value;
+  }
+  .bg-gray-#{$key} {
+    background-color: $value;
+  }
+}
+
+.text-white {
+  color: $white-color !important;
+}
+
+/* Backgrounds */
+.bg-primary-white, .bg-white {
+  background-color: $white-color !important;
+}
+
+.bg-blue, .background-blue {
+  background-color: $blue-main !important;
+}
+
+.bg-gray, .background-gray {
+  background-color: $gray-main !important;
+}
+
+.bg-yellow, .background-yellow {
+  background-color: $yellow-main !important;
+}

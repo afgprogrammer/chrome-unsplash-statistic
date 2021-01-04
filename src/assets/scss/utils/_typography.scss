@@ -1,0 +1,90 @@
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 14px;
+$font-weight-base: 400;
+
+.text-xlg, .text-extra-large {
+  font-size: 2.571em;
+  font-weight: 900;
+}
+
+.text-lg, .text-large {
+  font-size: 1.914em;
+  font-weight: 700;
+}
+
+.text-md, .text-medium {
+  font-size: 1.285em;
+  font-weight: 300;
+}
+
+.text-regular {
+  font-size: 1.14em;
+  font-weight: 300;
+}
+
+.text-sm, .text-small {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.text-xsm, .text-extra-small {
+  font-size: 0.857em;
+  font-weight: 300;
+  color: map-get($map: $gray-color, $key: '400');
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.font-weight-black {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 500;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-light {
+  font-weight: 100;
+}

@@ -1,0 +1,51 @@
+html, #app, 
+.container-fluid {
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-main;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+ul.list {
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, 
+h4, h5, h6, p {
+  margin: 0;
+  &:not(p) {
+    line-height: 1.3;
+  }
+}
+
+h1 {
+  font-size: 2.571em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.429em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.286em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.143em;
+  font-weight: 300;
+}
