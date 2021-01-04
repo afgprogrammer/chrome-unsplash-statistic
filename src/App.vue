@@ -1,15 +1,15 @@
 <template>
-    <section>
-        <h1>Hello World!</h1>
-    </section>
+    <home-page></home-page>
 </template>
 
 <script>
+import HomePage from './pages/Home'
+
 export default {
-  
+    components: { HomePage }
 }
 </script>
 
 <style lang="scss">
-@import url('assets/scss/app.scss');
+@import './assets/scss/app.scss';
 </style>
