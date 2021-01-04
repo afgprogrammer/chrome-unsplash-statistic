@@ -80,8 +80,8 @@ export default {
                 this.fetchUser()
                 this.fetchPopular()
                 this.fetchUserStatistic()
-                
-                return;
+
+                return localStorage.setItem('last_fetch', new Date())
             }
 
         }
