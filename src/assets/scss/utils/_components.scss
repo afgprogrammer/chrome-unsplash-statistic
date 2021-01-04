@@ -24,8 +24,20 @@
   position: static;
 }
 
+.rounded-5 {
+  border-radius: 5px
+}
+
 .rounded-10 {
   border-radius: 10px
+}
+
+.bordered {
+  border: 1px solid $gray-light;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .overflow-hidden {
