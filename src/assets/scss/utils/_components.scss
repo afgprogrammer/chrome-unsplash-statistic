@@ -47,3 +47,37 @@
 .opacity-1 {
   opacity: 1;
 }
+
+.btn {
+  opacity: 1;
+  display: block;
+  border: 1px solid transparent;
+  height: 32px;
+  padding: 0 11px;
+  font-size: .93em;
+  font-weight: 600;
+  line-height: 30px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  text-align: center;
+  cursor: pointer;
+  @include transition(.1s, ease-in-out);
+  &:focus {
+    outline: none;
+    border-color: $gray-darkest;
+  }
+  &.btn-submit {
+    color: $gray-main;
+    background-color: $white-color;
+    border-color: $gray-light;
+    &:hover {
+      box-shadow: 0 1px 2px rgba(0,0,0,.08);
+      border-color: $gray-dark;
+      color: $gray-darkest;
+    }
+  }
+}
+
+.form-control {
+  font-size: 1em !important;
+}
