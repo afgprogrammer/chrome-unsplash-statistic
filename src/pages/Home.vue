@@ -2,26 +2,59 @@
     <section id="home-page">
         <section class="container">
             <div id="insights">
-                <header class="py-3">
-                    <h1 class="text-md font-weight-bold text-gray-700">Insights</h1>
-                </header>
                 <section class="content">
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="rounded-5 bordered p-3">
-                                <div class="d-flex" v-if="user_statistic && user_statistic.hasOwnProperty('views')">
+                        <div class="col-lg-4" v-if="user_statistic && user_statistic.hasOwnProperty('views')">
+                            <div class="p-3 text-center">
+                                <div class="d-flex">
                                     <div class="d-flex flex-column flex-grow-1">
-                                        <span class="text-sm font-weight-bold text-gray-800">Views</span>
-                                        <span class="text-lg">{{ user_statistic.views.total.toLocaleString() }}</span>
+                                        <span class="text-md font-weight-bold text-gray-800">Views</span>
+                                        <span class="text-xlg">{{ user_statistic.views.total.toLocaleString() }}</span>
                                     </div>
-                                    <div class="d-flex flex-column flex-grow-1">
-                                        <span class="text-sm font-weight-bold text-gray-800">Downloads</span>
-                                        <span class="text-lg">{{ user_statistic.downloads.total.toLocaleString() }}</span>
-                                    </div>
+                                </div>
+                                <div class="height-20p"></div>
+                                <div>
+                                    <area-chart
+                                        :dateList="user_statistic.views.historical.values.map(item => item.date)"
+                                        :values="user_statistic.views.historical.values.map(item => item.value)"
+                                    ></area-chart>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6"></div>
+                        <div class="col-lg-4" v-if="user_statistic && user_statistic.hasOwnProperty('views')">
+                            <div class="p-3 text-center">
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <span class="text-md font-weight-bold text-gray-800">Downloads</span>
+                                        <span class="text-xlg">{{ user_statistic.downloads.total.toLocaleString() }}</span>
+                                    </div>
+                                </div>
+                                <div class="height-20p"></div>
+                                <div>
+                                    <area-chart
+                                        :dateList="user_statistic.downloads.historical.values.map(item => item.date)"
+                                        :values="user_statistic.downloads.historical.values.map(item => item.value)"
+                                    ></area-chart>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" v-if="user_statistic && user_statistic.hasOwnProperty('views')">
+                            <div class="p-3 text-center">
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <span class="text-md font-weight-bold text-gray-800">Likes</span>
+                                        <span class="text-xlg">{{ user_statistic.likes.total.toLocaleString() }}</span>
+                                    </div>
+                                </div>
+                                <div class="height-20p"></div>
+                                <div>
+                                    <area-chart
+                                        :dateList="user_statistic.downloads.historical.values.map(item => item.date)"
+                                        :values="user_statistic.downloads.historical.values.map(item => item.value)"
+                                    ></area-chart>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -61,7 +94,13 @@
 </template>
 
 <script>
+import AreaChart from '../components/charts/AreaChart'
+
 export default {
+    components: {
+        AreaChart
+    },
+
     data() {
         return {
             user: {},
