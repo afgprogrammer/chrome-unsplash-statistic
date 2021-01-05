@@ -72,7 +72,7 @@ export default {
                     intersect: false,
                     inverseOrder: false,
                     enabledOnSeries: true,
-                    theme: false,
+                    theme: 'dark',
                     followCursor: false,
                     marker: {
                         show: false,
