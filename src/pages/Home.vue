@@ -188,7 +188,7 @@ export default {
 
         fetchPopular() {
             axios
-                .get('users/afgprogrammer/photos?stats=true&order_by=popular')
+                .get('users/afgprogrammer/photos?stats=true&order_by=popular&per_page=50')
                 .then((response) => {
                     this.photos = response.data
                     localStorage.setItem('photos', JSON.stringify(this.photos))
