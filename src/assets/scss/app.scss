@@ -1,2 +1,29 @@
 @import 'assets/lib/bootstrap/bootstrap-grid.min.css';
 @import './utils/main';
+
+.main-header {
+    border-bottom: 1px solid $gray-lightest;
+    .unsplash-search {
+        height: 40px;
+        padding-left: 20px;
+        padding-bottom: 2px;
+        background: #EEEEEE;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        @include transition(.3s, ease);
+        &:focus {
+            border-color: $gray-light;
+            outline: none;
+        }
+    }
+
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        border-radius: 50px;
+        img {
+            width: 100%;
+        }
+    }
+}
