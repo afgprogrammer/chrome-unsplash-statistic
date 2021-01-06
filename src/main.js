@@ -2,6 +2,7 @@ import axios from 'axios'
 import App from './App.vue'
 import { createApp } from 'vue'
 import VueAxios from 'vue-axios'
+import LoadingComponent from './components/features/Loading'
 
 // Application env
 window.env = require("../env.js");
@@ -26,4 +27,5 @@ app.config.globalProperties.$filters = {
     }
 }
 
+app.component('v-loading', LoadingComponent)
 app.mount('#app')
