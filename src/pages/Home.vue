@@ -146,7 +146,7 @@ export default {
     methods: {
         fetchUser() {
             axios
-                .get('users/afgprogrammer')
+                .get(`users/${this.user.username}`)
                 .then((response) => {
                     this.user = response.data
                     localStorage.setItem('user_details', JSON.stringify(this.user))
@@ -154,8 +154,9 @@ export default {
         },
 
         fetchUserStatistic() {
+            console.log(this.user)
             axios
-                .get('users/afgprogrammer/statistics')
+                .get(`users/${this.user.username}/statistics`)
                 .then((response) => {
                     this.user_statistic = response.data
                     localStorage.setItem('user_statistic', JSON.stringify(this.user_statistic))
@@ -164,7 +165,7 @@ export default {
 
         fetchPopular() {
             axios
-                .get('users/afgprogrammer/photos?stats=true&order_by=popular&per_page=50')
+                .get(`users/${this.user.username}/photos?stats=true&order_by=popular&per_page=50`)
                 .then((response) => {
                     this.photos = response.data
                     localStorage.setItem('photos', JSON.stringify(this.photos))
