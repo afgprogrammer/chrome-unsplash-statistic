@@ -61,7 +61,7 @@
   font-size: .93em;
   font-weight: 600;
   line-height: 30px;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 1px 1px rgba(0,0,0,.04);
   text-align: center;
   cursor: pointer;
@@ -88,7 +88,7 @@
     }
   }
   &.btn-primary {
-    height: 40px;
+    height: 45px;
     background-color: $gray-dark;
     color: $white-color;
     &:hover {
@@ -98,7 +98,7 @@
 }
 
 .form-control {
-  height: 40px;
+  height: 45px;
   background: #EEEEEE;
   border-radius: 50px;
   border: 1px solid transparent;
@@ -109,5 +109,17 @@
   &:focus {
     border-color: $gray-light;
     outline: none;
+  }
+}
+
+input {
+  &::placeholder {
+    color: map-get($map: $gray-color, $key: '500');
+  }
+  &:-ms-input-placeholder {
+    color: map-get($map: $gray-color, $key: '500');
+  }
+  &:-webkit-input-placeholder {
+    color: map-get($map: $gray-color, $key: '500');
   }
 }
