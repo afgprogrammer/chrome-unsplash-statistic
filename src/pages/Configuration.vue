@@ -6,8 +6,8 @@
                     <div class="flex-grow-1 px-5 mx-5">
                         <div>
                             <header class="mb-5">
-                                <h1 class="text-md font-weight-bold">Hi, there</h1>
-                                <p class="text-gray-main mt-2">Here is some configuration</p>
+                                <h1 class="text-xlg font-weight-bold">Hi, there</h1>
+                                <p class="text-gray-main text-md mt-3">Here is some configuration</p>
                             </header>
                             <small v-if="errors.unknown" class="d-block text-red my-2">{{ errors.unknown }}</small>
                             <div>
@@ -21,7 +21,7 @@
                                 <small v-if="errors.access_key" class="d-block text-red mt-2">{{ errors.access_key }}</small>
                             </div>
                             <div class="mt-4 d-flex justify-content-center">
-                                <button class="btn btn-primary btn-round px-5" @click="validate">
+                                <button class="btn btn-primary px-5" @click="validate">
                                     <v-loading v-if="isLoading" width="20px"></v-loading>
                                     <span v-else>Let's go</span>
                                 </button>
@@ -85,8 +85,8 @@ export default {
         onResponse(response) {
             this.isLoading = false
 
-            localStorage.setItem('user_details', JSON.stringify(response.data))
-            localStorage.setItem('access_key', this.access_key)
+            localStorage.setItem('un_ext_user_details', JSON.stringify(response.data))
+            localStorage.setItem('un_ext_access_key', this.access_key)
 
             window.location.reload()
         },

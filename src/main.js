@@ -14,7 +14,7 @@ const instance = axios.create({
     baseURL: env.BASE_URL,
     headers: {
         'Accept-Version': 'v1',
-        'Authorization': `Client-ID ${env.ACCESS_KEY}`
+        'Authorization': `Client-ID ${localStorage.getItem('un_ext_access_key')}`
     }
 });
 
