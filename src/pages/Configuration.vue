@@ -2,12 +2,18 @@
     <section id="configuration-page">
         <div class="row h-100">
             <div class="col-lg-6">
-                <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="d-flex justify-content-center h-100">
                     <div class="flex-grow-1 px-5 mx-5">
-                        <div>
+                        <div class="height-200p"></div>
+                        <a href="https://unsplash.com" title="Unsplash Home " class="opacity-1">
+                            <svg width="32" height="32" class="_1Jlgk" version="1.1" viewBox="0 0 32 32" aria-labelledby="unsplash-home" aria-hidden="false"><title id="unsplash-home">Unsplash Home</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg>
+                        </a>
+                        <div class="mt-5">
                             <header class="mb-5">
                                 <h1 class="text-xlg font-weight-bold">Hi, there</h1>
-                                <p class="text-gray-main text-md mt-3">Here is some configuration</p>
+                                <p class="text-gray-main text-md mt-3">
+                                    Your photos statistics right on your chrome new tab :) 
+                                </p>
                             </header>
                             <small v-if="errors.unknown" class="d-block text-red my-2">{{ errors.unknown }}</small>
                             <div>
@@ -15,8 +21,11 @@
                                 <input type="text" id="username" v-model="username" class="form-control w-100 mt-2" placeholder="Your unsplash username">
                                 <small v-if="errors.username" class="d-block text-red mt-2">{{ errors.username }}</small>
                             </div>
-                            <div class="mt-3">
-                                <label class="text-gray-700" for="access_key">Access Key <span class="text-red">*</span></label>
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between">
+                                    <label class="text-gray-700" for="access_key">Access Key <span class="text-red">*</span></label>
+                                    <a href="https://unsplash.com/documentation#registering-your-application" title="registering-your-application" class="text-xsm opacity-1"><small>How can I find my access key?</small></a>
+                                </div>
                                 <input type="text" id="access_key" v-model="access_key" class="form-control w-100 mt-2" placeholder="Your unsplash application access key">
                                 <small v-if="errors.access_key" class="d-block text-red mt-2">{{ errors.access_key }}</small>
                             </div>
