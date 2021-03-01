@@ -93,7 +93,7 @@
                 </section>
             </div>
         </section>
-        <div v-else>
+        <div class="text-center" v-else>
             Loading ...
         </div>
     </section>
@@ -167,10 +167,11 @@ export default {
             await this.fetchUserStatistic()
 
             this.setLastFetch()
+            this.isLoading = false
         },
 
         async fetchUser() {
-            axios
+            await axios
                 .get(`users/${this.username}`)
                 .then((response) => {
                     localStorage.setItem('un_ext_user_details', JSON.stringify(response.data))
@@ -178,7 +179,7 @@ export default {
         },
 
         async fetchUserStatistic() {
-            axios
+            await axios
                 .get(`users/${this.username}/statistics`)
                 .then((response) => {
                     localStorage.setItem('un_ext_user_statistic', JSON.stringify(response.data))
@@ -186,7 +187,7 @@ export default {
         },
 
         async fetchPopular() {
-            axios
+            await axios
                 .get(`users/${this.username}/photos?stats=true&order_by=popular&per_page=50`)
                 .then((response) => {
                     localStorage.setItem('un_ext_photos', JSON.stringify(response.data))
