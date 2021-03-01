@@ -6,5 +6,11 @@
   "browser_action": {},
   "chrome_url_overrides" : {
     "newtab": "dist/index.html"
+  },
+  "icons": {
+    "16": "dist/images/unsplash-16.png",
+    "32": "dist/images/unsplash-32.png",
+    "48": "dist/images/unsplash-48.png",
+    "128": "dist/images/unsplash-128.png"
   }
 }
