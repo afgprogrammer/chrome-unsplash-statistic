@@ -39,7 +39,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 position-relative">
+                <div class="position-absolute" style="bottom: 20px;right: 30px;">
+                    <small class="text-xsm">Photo by <a href="https://unsplash.com/@nasimdadfar" class="text-white">@nasimdadfar</a></small>
+                </div>
                 <div class="side-image" style="background-image: url('https://images.unsplash.com/photo-1603532654387-fc0a4555e8ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&h=1080&q=80')"></div>
             </div>
         </div>
