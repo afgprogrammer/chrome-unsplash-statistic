@@ -1,7 +1,7 @@
 {
   "name": "Unsplash Statistic",
   "version": "1.0",
-  "description": "Your Unsplash statistics right on your browser.",
+  "description": "Your Unsplash statistics right on your browser new tab.",
   "manifest_version": 2,
   "browser_action": {},
   "chrome_url_overrides" : {
